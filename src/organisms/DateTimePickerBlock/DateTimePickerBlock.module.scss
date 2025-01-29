@@ -1,0 +1,34 @@
+@use '../../css/variables' as *;
+
+.block {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: auto auto;
+  gap: 12px 16px; 
+  margin-top: $fieldMarginTop;
+
+  & div:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  & div:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+
+    @media (max-width: $mobileDeviceSize) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  }
+  
+  & div:nth-child(3)  {
+    grid-column: 1;
+    grid-row: 2;
+
+    @media (max-width: $mobileDeviceSize) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+  }
+}

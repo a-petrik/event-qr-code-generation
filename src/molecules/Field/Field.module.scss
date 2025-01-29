@@ -1,0 +1,22 @@
+@use '../../css/variables' as *;
+
+.field {
+  margin-top: $fieldMarginTop;
+
+  &Picker {
+    margin-top: 0;
+  }
+}
+
+.label {
+  display: block;
+  font-weight: 700;
+  line-height: $lineHeightBig;
+  text-align: left;
+}
+
+.required {
+  line-height: $lineHeightBig;
+  color: $warningColor;
+  margin-left: 2px;
+}

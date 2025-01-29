@@ -1,0 +1,55 @@
+@use '../../css/variables' as *;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 40px 0;
+  gap: 40px;
+  width: 100%;
+  max-width: 608px;
+
+  @media (max-width: $mobileDeviceSize) {
+    padding: 8px;
+    gap: 8px;
+  }
+}
+
+.formWrapper, .QRCodeWrapper {
+  width: 100%;
+  padding: 24px 32px;
+  border-radius: $blockBorderRadius;
+  background: #FFF;
+
+  @media (max-width: $mobileDeviceSize) {
+    padding: 16px;
+  }
+}
+
+.formTitle {
+  color: $mainTextColor;
+  font-weight: 700;
+  font-size: $fontSizeTitle;
+  line-height: $lineHeightTitle;
+  text-align: center;
+}
+
+.QRCodeTitle {
+  color: $mainTextColor;
+  font-weight: 700;
+  font-size: $fontSizeStandard;
+  line-height: $lineHeightBig;
+  text-align: left;
+}
+
+.dateTimePickerWrapper {
+  display: flex;
+  gap: 8px;
+  margin-top: $elementMarginTop;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: $fieldMarginTop;
+}

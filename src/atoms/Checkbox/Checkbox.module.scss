@@ -1,0 +1,16 @@
+@use '../../css/variables' as *;
+
+.checkbox {
+  display: none;
+
+  &Label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: $fontSizeStandard;
+    line-height: $lineHeightBig;
+    color: $mainTextColor;
+  }
+}

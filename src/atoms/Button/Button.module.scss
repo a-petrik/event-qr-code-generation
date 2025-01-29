@@ -1,0 +1,27 @@
+@use '../../css/variables' as *;
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #2ECC87;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  height: $buttonHeight;
+  width: auto;
+  padding: 10px 16px;
+  border-radius: $inputBorderRadius;
+  font-size: $fontSizeBig;
+  line-height: $lineHeightBig;
+  font-weight: 700;
+
+  &:hover {
+    background: $hoverColor;
+  }
+
+  &:disabled {
+    background: $disabledColor;
+    cursor: not-allowed;
+  }
+}

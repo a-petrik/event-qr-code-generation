@@ -1,0 +1,28 @@
+@use '../../css/variables' as *;
+
+.textInput {
+  width: 100%;
+  height: $inputHeight;
+  padding: 8px 16px;
+  margin-top: $elementMarginTop;
+  border: 1px solid $borderColor;
+  border-radius: $inputBorderRadius;
+  outline: none;
+  line-height: $lineHeightBig;
+  font-size: $fontSizeBig;
+  color: $mainTextColor;
+  font-weight: 500;
+  text-align: left;
+
+  &:focus {
+    border: 1px solid $focusColor;
+  }
+
+  &Error {
+    border: 1px solid $warningColor;
+  }
+
+  &::placeholder {
+    color: $placeholderColor;
+  }
+}

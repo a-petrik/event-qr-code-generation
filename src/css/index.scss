@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+:root {
+  font-family: 'Yu Gothic', 'Meiryo', 'Helvetica Neue', Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: $fontSizeStandard;
+  font-style: normal;
+  color-scheme: light;
+  color: $mainTextColor;
+  height: 100%;
+  background: $mainColor;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

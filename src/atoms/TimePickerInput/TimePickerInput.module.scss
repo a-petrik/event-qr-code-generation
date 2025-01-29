@@ -1,0 +1,17 @@
+@use '../../css/variables' as *;
+
+.timePickerInput {
+  background: $datePickerColor;
+  padding: 8px 16px;
+  border-radius: $inputBorderRadius;
+  line-height: $lineHeightBig;
+  font-size: $fontSizeBig;
+  font-weight: 500;
+  color: $mainTextColor;
+  cursor: pointer;
+  width: max-content;
+
+  &Error {
+    border: 1px solid $warningColor;
+  }
+}

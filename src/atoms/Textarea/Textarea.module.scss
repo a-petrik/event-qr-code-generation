@@ -1,0 +1,29 @@
+@use '../../css/variables' as *;
+
+.textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 8px 16px;
+  margin-top: $elementMarginTop;
+  border: 1px solid $borderColor;
+  border-radius: $inputBorderRadius;
+  outline: none;
+  line-height: $lineHeightBig;
+  color: $mainTextColor;
+  font-size: $fontSizeBig;
+  font-weight: 500;
+  text-align: left;
+
+  &:focus {
+    border: 1px solid $focusColor;
+  }
+
+  &Error {
+    border: 1px solid $warningColor;
+  }
+
+  &::placeholder {
+    color: $placeholderColor;
+  }
+}
